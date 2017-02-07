@@ -1,0 +1,74 @@
+$output-bourbon-deprecation-warnings: false //Ждём обновления node-bourbon до 5-й версии
+
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: em(22px)
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+a,a:hover,a:focus,a:active
+	color: $main-color
+	text-decoration: underline
+
+.headers
+	font-family: "PFCentroSlabProMedium", $helvetica
+	text-transform: uppercase
+	font-weight: normal
+	color: $headers-color
+
+h1,h2,h3,h4,h5,h6
+	@extend .headers
+
+h1
+	font-size: em(48px)
+	text-transform: none
+
+h2
+	font-size: em(30px)
+
+h3
+	font-size: em(24px)
+
+b,strong
+	font-family: "RalewayBold", $helvetica
+
+@import "section/sectionOne"
+@import "media" // Всегда в конце
