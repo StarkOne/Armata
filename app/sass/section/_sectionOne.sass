@@ -6,7 +6,40 @@
 	min-height: 620px
 	background-size: cover
 	background-position: center 0
+	position: relative
 	&::before
 		@extend .before
+		background-color: #394b5f
+		opacity: .85
 	h1
 		text-transform: none
+.top-line
+	background: url(/img/top_gradient.png) repeat-x
+	min-height: 160px
+	padding-top: 45px
+.logo
+	opacity: .95
+	img
+		width: 100px
+.main-mnu
+	font-size: em(14px)
+	li
+		line-height: 46px
+		padding: 0 11px
+		&.active,
+			a
+				color: $main-color
+				text-decoration: underline
+		a:hover
+			color: $main-color
+			text-decoration: underline
+	ul
+		@extend .ulmnu
+	a
+		text-decoration: none
+		color:#fff
+.phone
+	color: #fff
+	opacity: .9
+	font-family: "RobotoBold" , $helvetica
+	font-size: em(20px)
