@@ -26,7 +26,7 @@ body textarea:focus:required:invalid
 	color: #666
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: #fff
 
 html, body
 	height: 100%
@@ -83,6 +83,22 @@ b,strong
 	padding: 0
 	li
 		display: inline-block
+.button-wrap
+	text-align: center
+.buttons
+	display: inline-block
+	border: none
+	background-color: $main-color
+	color: #111
+	font-size: em(22px)
+	font-family: "PFCentroSlabProBold", $helvetica
+	padding: 10px 30px
+	border-bottom: #B97200 3px solid
+	transition: all .5s ease
+	&:hover
+		background-color: #FFB33B
+	&:active
+		background-color: #DBBC0E
 
 @import "section/sectionOne"
 @import "media" // Всегда в конце

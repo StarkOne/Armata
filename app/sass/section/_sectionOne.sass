@@ -7,6 +7,7 @@
 	background-size: cover
 	background-position: center 0
 	position: relative
+	padding-bottom: 160px
 	&::before
 		@extend .before
 		background-color: #394b5f
@@ -139,9 +140,11 @@
 	margin-bottom: 50px
 .forms
 	background-color: transparentize(#243343,.2)
-	padding: 35px 35px
+	padding: 35px 35px 30px
 	color: #97a4b2
 	font-size: em(14px)
+	border-bottom: 3px solid #1A222B
+
 	h4
 		font-family: "PFCentroSlabProMedium", $helvetica
 		font-size: em(33px)
@@ -150,20 +153,28 @@
 		margin: 0
 	p
 		line-height: em(23px)
+		margin-top: 15px
 	label
-		margin-top: 20px
+		margin-top: 22px
 		display: block
 		margin-bottom: 20px
 		span
 			letter-spacing: 1.5px
 			display: block
 			color: #778390
-			margin-bottom: 4px
+			margin-bottom: 6px
 	input
 		display: block
 		width: 100%
 		border: none
-		border-top: 3px #1F2A36 solid
+		color: #fff
+		box-shadow: 0 -3px #1F2A36
 		background-color: #34465A
 		text-indent: 10px
 		padding: 5px 0
+		transition: all .5s ease
+		&:focus
+			box-shadow: 0 -6px #1F2A36
+			background-color: #395E65
+  .buttons
+  	margin-top: 10px
