@@ -56,6 +56,7 @@ a,a:hover,a:focus,a:active
 
 h1,h2,h3,h4,h5,h6
 	@extend .headers
+	line-height: em(22px)
 
 h1
 	font-size: em(48px)
@@ -68,6 +69,7 @@ h3
 
 b,strong
 	font-family: "RalewayBold", $helvetica
+	font-weight: normal
 
 .before
 	content: ""
@@ -95,10 +97,100 @@ b,strong
 	padding: 10px 30px
 	border-bottom: #B97200 3px solid
 	transition: all .5s ease
+	text-decoration: none
 	&:hover
 		background-color: #FFB33B
+		text-decoration: none
+		color: #111
 	&:active
 		background-color: #DBBC0E
+		text-decoration: none
+		color: #111
+	&:focus
+		color: #111
+		text-decoration: none
+.forms
+	background-color: transparentize(#243343,.2)
+	padding: 35px 35px 30px
+	color: #97a4b2
+	font-size: em(14px)
+	border-bottom: 3px solid #1A222B
+
+	h4
+		font-family: "PFCentroSlabProMedium", $helvetica
+		font-size: em(33px)
+		color: #fff
+		text-transform: none
+		margin: 0
+	p
+		line-height: em(23px)
+		margin-top: 15px
+	label
+		margin-top: 22px
+		display: block
+		margin-bottom: 20px
+		span
+			letter-spacing: 1.5px
+			display: block
+			color: #778390
+			margin-bottom: 6px
+	input
+		display: block
+		width: 100%
+		border: none
+		color: #fff
+		box-shadow: 0 -3px #1F2A36
+		background-color: #34465A
+		text-indent: 10px
+		padding: 5px 0
+		font-family: "PFCentroSlabProMedium", $helvetica
+		transition: all .5s ease
+		font-size: em(20px)
+		&:focus
+			box-shadow: 0 -6px #1F2A36
+			background-color: #395E65
+  .buttons
+  	margin-top: 10px
+
+.homesect
+	padding-top: 70px
+	background-color: #F9F9F9
+	position: relative
+	a
+		&:hover
+			text-decoration: none
+	&::before
+		content: ""
+		height: 6px
+		position: absolute
+		top: -6px
+		width: 100%
+		background: url(/img/bah_1.png) repeat-x
+	h2
+		text-align: center
+		position: relative
+		&::after
+			position: absolute
+			content: ""
+			height: 4px
+			background-color: $main-color
+			width: 165px
+			display: block
+			bottom: -30px
+			left: 50%
+			transform: translate(-50%, 0)
+.section-head
+	margin-bottom: 80px
+	p
+		margin-top: 60px
+		a
+			font-family: "RalewayBold", $helvetica
+.section-bottom
+	margin-top: 70px
+	background-color: #E5E5E5
+	padding: 50px 0
+	text-align: center
 
 @import "section/sectionOne"
+@import "section/sectionTwo"
 @import "media" // Всегда в конце
