@@ -107,7 +107,63 @@
 	margin-top: 40px
 	h1
 		margin-top: 120px
-		color:#fff
+		color: #fff
 		border-bottom: $main-color 8px solid
 		display: inline-block
 		padding-bottom: 22px
+	ul
+		@extend .ulmnu
+		margin-top: 10px
+		li
+			display: block
+			font-size: 18px
+			position: relative
+			line-height: em(30px)
+			font-family: "RalewaySemiBold", $helvetica
+			padding-left: 16px
+			&::before
+				content: ""
+				display: block
+				width: 6px
+				height: 11px
+				+triangle(12px, $main-color, right);
+				position: absolute
+				top: 10px
+				left: 0
+			a
+				text-decoration: none
+				color: #fff
+				&:hover
+					text-decoration: underline
+.header-left
+	margin-bottom: 50px
+.forms
+	background-color: transparentize(#243343,.2)
+	padding: 35px 35px
+	color: #97a4b2
+	font-size: em(14px)
+	h4
+		font-family: "PFCentroSlabProMedium", $helvetica
+		font-size: em(33px)
+		color: #fff
+		text-transform: none
+		margin: 0
+	p
+		line-height: em(23px)
+	label
+		margin-top: 20px
+		display: block
+		margin-bottom: 20px
+		span
+			letter-spacing: 1.5px
+			display: block
+			color: #778390
+			margin-bottom: 4px
+	input
+		display: block
+		width: 100%
+		border: none
+		border-top: 3px #1F2A36 solid
+		background-color: #34465A
+		text-indent: 10px
+		padding: 5px 0
