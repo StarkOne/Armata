@@ -7,13 +7,14 @@
 	background-size: cover
 	background-position: center 0
 	position: relative
-	padding-bottom: 160px
+	padding-bottom: 120px
 	&::before
 		@extend .before
 		background-color: #394b5f
 		opacity: .85
 	h1
 		text-transform: none
+		line-height: em(20px)
 .top-line
 	background: url(/img/top_gradient.png) repeat-x
 	min-height: 160px
@@ -111,7 +112,7 @@
 		color: #fff
 		border-bottom: $main-color 8px solid
 		display: inline-block
-		padding-bottom: 22px
+		padding-bottom: 10px
 	ul
 		@extend .ulmnu
 		margin-top: 10px
@@ -119,7 +120,8 @@
 			display: block
 			font-size: 18px
 			position: relative
-			line-height: em(30px)
+			//line-height: em(30px)
+			margin-bottom: 12px
 			font-family: "RalewaySemiBold", $helvetica
 			padding-left: 16px
 			&::before
@@ -129,7 +131,7 @@
 				height: 11px
 				+triangle(12px, $main-color, right);
 				position: absolute
-				top: 10px
+				top: 4px
 				left: 0
 			a
 				text-decoration: none
@@ -172,9 +174,28 @@
 		background-color: #34465A
 		text-indent: 10px
 		padding: 5px 0
+		font-family: "PFCentroSlabProMedium", $helvetica
 		transition: all .5s ease
+		font-size: em(20px)
 		&:focus
 			box-shadow: 0 -6px #1F2A36
 			background-color: #395E65
   .buttons
   	margin-top: 10px
+
+.arrow-wrap
+	@extend .button-wrap
+	position: relative
+	z-index: 2
+	top: 50px
+
+.arrow-bottom
+	display: inline-block
+	width: 40px
+	cursor: pointer
+	height: 40px
+	background-image: url(/img/arrow_down.png)
+	opacity: .7
+	transition: all .25s ease
+	&:hover
+		opacity: 1
