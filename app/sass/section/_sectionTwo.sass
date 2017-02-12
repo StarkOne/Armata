@@ -3,12 +3,12 @@
 @import "vars"
 
 .section-content
-	background-image: url(/img/s1_gray_bg.png)
-	background-repeat: no-repeat
-	background-position: bottom
 	position: relative
 	padding-bottom: 90px
-	min-height: 565px
+	.info-item-wrap
+		&:nth-child(4),&:last-child
+		.info-item
+			margin-bottom: 0px
 .s1_bottom-triangle
 	height: 90px
 	position: absolute
@@ -23,12 +23,18 @@
 	padding: 15px 0 60px
 	background-color: #394B5F
 	.info-item
-		margin: 20px 0 0
+		margin: 15px 0 0
+		p
+			color: #fff
+			border-color: #546476
+	.info-item-wrap:nth-child(2)
+		.info-item
+			margin-top: 40px
 .info-item
 	padding-left: 34px
 	max-width: 264px
 	line-height: em(19px)
-	margin: 70px 0
+	margin: 54px 0
 	h4
 		margin-top: 0
 		margin-bottom: 10px
@@ -38,6 +44,15 @@
 			text-transform: none
 	p
 		font-family: em(16px)
+		border-bottom: #DEE1E5 1px solid
+		padding-bottom: 20px
+.section_1
+	.section-content
+		background-image: url(/img/s1_gray_bg.png)
+		background-repeat: no-repeat
+		background-position: top
+	.section-bottom
+		background-color: #2C3949
 .info-item-wrap:nth-child(2)
 	.info-item
 		margin-top: 0
