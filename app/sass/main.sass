@@ -184,6 +184,7 @@ b,strong
 		margin-top: 50px
 .section-head
 	margin-bottom: 65px
+	text-align: center
 	p
 		margin-top: 60px
 		a
@@ -252,7 +253,55 @@ b,strong
 	img
 		width: 70px !important
 		margin-top: 3px
+.s_gray
+	background-color: #e5e5e5
+	&::before
+		background-image: url(../img/bah_3.png)
+	.section-bottom
+		background-color: #D6D6D6
+.section-pb
+	padding-bottom: 70px
+.cards
+	text-align: center
+	perspective: 600px
+	
+	.card
+		width: 260px
+		vertical-align: top
+		background-color: #2C3949
+		display: inline-block
+		margin: 0 12px
+		color: #97a4b2
+		font-size: em(15px)
+		line-height: em(22px)
+		padding: 54px 28px 48px
+		transition: all 1s ease
+		&-off
+			transform: rotateY(100deg)
+			opacity: 0
+		&-on
+			opacity: 1
+		h4
+			font-size: em(16px)
+			font-family: "RalewayBold", $helvetica
+			color: #E5E5E5
+			margin-top: 30px
+			margin-top: 18px
+		p
+			margin-bottom: 0px
+			height: 75px
+			strong
+				color: $main-color
 
+		.card-icon
+			width: 120px
+			display: inline-block
+			height: 120px
+			line-height: 120px
+			background-color: $main-color
+			border-radius: 10em
+			img
+				width: 75px
 
 
 @import "section/sectionOne"
