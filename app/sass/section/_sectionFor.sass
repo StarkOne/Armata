@@ -1,3 +1,45 @@
 @import "bourbon"
 @import "fonts"
 @import "vars"
+
+.triangles-container
+	color: #fff
+	font-size: em(19px)
+	font-family: "PFCentroSlabProMedium", $helvetica
+	margin: 20px 0 70px
+	text-align: center
+.tc-item
+	width: 290px
+	height: 128px
+	position: relative
+	transition: opacity 2s
+	display: inline-block
+	margin-left: -45px
+	vertical-align: top
+	&:first-child
+		margin-top: 0
+		.tc-content
+			margin-left: 50px
+
+	svg
+		position: absolute
+		top: 0
+		z-index: 0
+		left: 0
+	.tc-content
+		position: relative
+		z-index: 1
+		margin-top: 41px
+		margin-left: 55px
+		text-align: left
+		padding-right: 20px
+		span
+			font-size: em(22px)
+		img
+			height: 40px
+			float: left
+			margin-right: 15px
+.tc-item-off
+	opacity: 0
+.tc-item-on
+	opacity: 1

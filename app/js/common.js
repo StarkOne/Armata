@@ -12,7 +12,7 @@ $(function() {
 	$(".s2-bottom .img-wrap").equalHeights();
 	//$(".cards .card").equalHeights();
 	
-	$(".section_4 ").waypoint(function() {
+	$(".section_4").waypoint(function() {
 
 		$(".section_4 .card").each(function(index){
 			var ths = $(this);
@@ -23,4 +23,16 @@ $(function() {
 	},{
 		offset:"20%"
 	});
+	$(".section_5").waypoint(function() {
+
+		$(".section_5 .tc-item").each(function(index){
+			var ths = $(this);
+			setTimeout(function(){
+				ths.removeClass("tc-item-off").addClass("tc-item-on");
+			}, 200*index);
+		});
+	},{
+		offset:"20%"
+	});
+
 });
