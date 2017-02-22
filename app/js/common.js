@@ -10,7 +10,7 @@ $(function() {
 	$(".s1-bottom .info-item").equalHeights();
 	$(".s2-item").equalHeights();
 	$(".s2-bottom .img-wrap").equalHeights();
-	//$(".cards .card").equalHeights();
+	$(".cards .card").equalHeights();
 	
 	$(".section_4").waypoint(function() {
 
