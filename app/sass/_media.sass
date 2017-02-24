@@ -17,7 +17,7 @@
 		position: absolute
 		z-index: 2
 		right: 15px
-		top: 10px
+		top: 45px
 
 		ul
 			li
@@ -39,9 +39,26 @@
 		margin-left: 80px
 	.tc-item
 		margin-bottom: 5px
+	.main-footer
+		.phone
+			padding-right: 0
+		.toggle-mnu
+			display: none
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+
+.s8-left
+	.section-head
+		h2
+			text-align: center
+			margin-top: 0
+			&::after
+				transform: translate(-50%,0px)
+				left: 50%
+		p
+			text-align: center
+
 	.cards
 		.card 
 			margin-top: 20px
@@ -72,6 +89,8 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.s8-item
+		margin-bottom: 32px
 	.info-item
 		max-width: 100%
 		margin-top: 20px
@@ -99,6 +118,9 @@
 				border-color: #546476
 				p
 					margin-bottom: 0
+	.teams
+		.team 
+			margin-bottom: 30px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
