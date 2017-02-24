@@ -48,6 +48,36 @@ $(function() {
 		dotsSpeed : 600,
 		dragEndSpeed : 600
 	});
+	$(".arrow-bottom").click(function(){
+		$("html, body").animate({ scrollTop: $(".main-head").height()+120}, "slow");
+		return false;
+	});
 
+	$(".section-head h2, .section-head p").animated("fadeInRight");
+	$(".info-item-wrap").animated("zoomIn");
+	$(".teams .team").animated("zoomIn");
+	$(".slider .slide").animated("rollIn");
+	$(".homesect.section_8 .forms").animated("fadeInRight");
+	$(".section_8 .section-head p").animated("zoomIn");
 
-});
+	$(".section_2").waypoint(function() {
+		$(".s2-item-wrap").each(function(index){
+				var ths = $(this);
+				setInterval(function(){
+					ths.addClass("on");
+				}, 200*index);
+		});
+	},{
+		offset:"20%"
+	});
+	$(".section_8").waypoint(function() {
+		$(".s8-item").each(function(index){
+				var ths = $(this);
+				setInterval(function(){
+					ths.addClass("on");
+				}, 200*index);
+		});
+	},{
+		offset:"20%"
+	});
+}); 

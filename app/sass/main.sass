@@ -189,6 +189,7 @@ b,strong
 	text-align: center
 	p
 		margin-top: 60px
+		animation-delay: .3s
 		a
 			font-family: "RalewayBold", $helvetica
 .section-bottom
@@ -428,7 +429,13 @@ b,strong
 .s8-items
 	margin-bottom: 20px
 	.s8-item
-		text-align: center
+		opacity: 0
+		transition: all .4s ease
+		transform: translateY(-25px)
+		&.on
+			opacity: 1
+			transform: translateY(0px)
+			text-align: center
 		.img-wrap
 			height: 72px
 			img
