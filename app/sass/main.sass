@@ -32,7 +32,8 @@ body textarea:required:valid
 
 html, body
 	height: 100%
-
+.hidden
+	display: none
 body
 	font-size: 16px
 	min-width: 320px
@@ -151,8 +152,8 @@ b,strong
 		&:focus
 			box-shadow: 0 -6px #1F2A36
 			background-color: #395E65
-  .buttons
-  	margin-top: 10px
+	.buttons
+		margin-top: 10px
 
 .homesect
 	padding-top: 70px
@@ -454,6 +455,40 @@ b,strong
 	.main-mnu
 		a
 			color: #C7C9CC
+.top
+	height: 36px
+	background-color: #1F2B3A
+	background-image: url(../img/top.png)
+	background-repeat: no-repeat
+	background-position: center
+	cursor: pointer
+#callback
+	max-width: 300px
+	margin: auto
+	position: relative
+	h4
+		line-height: em(18px)
+		margin-bottom: 18px
+.mfp-forms
+	.forms
+		background-color: rgba(36,51,67,1)
+	.mfp-close
+		color: #fff
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.25s ease-out
+		&.mfp-ready
+			opacity: 0.8
+		&.mfp-removing
+			opacity: 0
+	&.mfp-wrap
+		.mfp-content
+			opacity: 0
+			transition: all 0.25s ease-out
+		&.mfp-ready .mfp-content
+			opacity: 1
+		&.mfp-removing .mfp-content
+			opacity: 0
 @import "section/sectionOne"
 @import "section/sectionTwo"
 @import "section/sectionthree"

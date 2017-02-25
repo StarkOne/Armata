@@ -94,7 +94,7 @@
 					</div>
 					<div class="col-md-4">
 					
-						<form action="" class="forms">
+						<form class="forms">
 							<h4>Заявка:</h4>
 							<p>Оставьте заявку и мы свяжемня с вами в течение 15 минут в работчее время с 10:00 до 18:00 с пн-пт.</p>
 
@@ -109,6 +109,7 @@
 							<div class="button-wrap">
 								<button class="buttons">Отправить</button>
 							</div>
+							<input type="hidden" name="formname" value="Заявка с верхней формы">
 						</form>
 
 					</div>
@@ -204,7 +205,7 @@
 			</div>
 		</div>
 		<div class="section-bottom">
-			<a href="#" class="buttons">Заказать оценку</a>
+			<a href="#callback" class="buttons">Заказать оценку</a>
 		</div>
 	</section>
 	<section class="homesect section_2">
@@ -317,7 +318,7 @@
 			</div>
 		</div>
 		<div class="section-bottom">
-			<a href="#" class="buttons">Заказать сопровождение</a>
+			<a href="#callback" class="buttons">Заказать сопровождение</a>
 		</div>
 	</section>	
 	<section class="homesect s_dark section_3">
@@ -398,7 +399,7 @@
 			</div>
 		</div>
 		<div class="section-bottom">
-			<a href="#" class="buttons">Заказать бухгалтерские услуги</a>
+			<a href="#callback" class="buttons">Заказать бухгалтерские услуги</a>
 		</div>
 	</section>
 	<section class="homesect section_4 s_gray">
@@ -445,7 +446,7 @@
 			</div>
 		</div>
 		<div class="section-bottom">
-			<a href="#" class="buttons">Обратиться к нам</a>
+			<a href="#callback" class="buttons">Обратиться к нам</a>
 		</div>
 	</section>
 	<section class="homesect s_dark section_5">
@@ -505,7 +506,7 @@
 			</div>
 		</div>
 		<div class="section-bottom">
-			<a href="#" class="buttons">Оставить заявку</a>
+			<a href="#callback" class="buttons">Оставить заявку</a>
 		</div>
 	</section>
 	<section class="homesect section_6 ">
@@ -667,6 +668,7 @@
 							<div class="button-wrap">
 								<button class="buttons">Отправить</button>
 							</div>
+							<input type="hidden" name="formname" value="Заявка с нижней формы">
 						</form>
 					</div>
 				</div>
@@ -723,6 +725,33 @@
 			</div>
 		</div>
 	</footer>
+	<div class="top" title="наверх"></div>
+	 <div class="hidden">
+	
+	<form class="forms" id="callback">
+
+		<h4>Заявка:</h4>
+		<p>Оставьте заявку и мы свяжемся с вами в течение 15 минут в рабочее время с 10:00 до 18:00 c пн-пт.</p>
+
+		<label>
+		<span>Ваше имя:</span>
+		<input type="text" name="name" required>
+		</label>
+
+		<label>
+		<span>Ваш телефон:</span>
+		<input type="text" name="phone" required>
+		</label>
+
+		<div class="button-wrap">
+		<button class="buttons">Отправить</button>
+		</div>
+
+		<input type="hidden" name="formname" value="">
+
+	</form>
+
+	</div>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 </body>

@@ -80,4 +80,17 @@ $(function() {
 	},{
 		offset:"20%"
 	});
+
+	$(".top").click(function(){
+		$("html, body").animate({ scrollTop: 0}, "slow");
+		return false;
+	});
+	$(".homesect .section-bottom .buttons").click(function() {
+		$("#callback h4").html($(this).text());
+		$("#callback input[name=formname]").val($(this).text());
+	}).magnificPopup({
+		type:"inline",
+		mainClass: 'mfp-forms'
+	});
+
 }); 
